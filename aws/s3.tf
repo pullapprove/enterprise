@@ -44,5 +44,5 @@ resource "null_resource" "pullapprove_public_bucket_sync" {
 }
 
 output "pullapprove_report_url" {
-  value = "https://${aws_s3_bucket.pullapprove_public_bucket.website_endpoint}/report/"
+  value = "http://${aws_s3_bucket.pullapprove_public_bucket.website_endpoint}/report/"
 }
